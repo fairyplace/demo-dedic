@@ -1,9 +1,6 @@
 
-
-
 <!DOCTYPE html>
 <html lang="ru">
-  
   <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -56,14 +53,14 @@
     <div class="header__mobile-icon">
       <span></span>
     </div>
-    <div class="header__mobile">
+    <div class="header__desktop-menu">
       <nav class="header__menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a href="index.html">Главная</a>
           </li>
           <li class="menu__item menu__item--sub">
-            <span>Услуги</span>
+            <a>Услуги</a>
             <span class="menu-arrow"></span>
             <ul class="submenu__list">
               <li class="submenu__item">
@@ -102,7 +99,66 @@
           <a href="https://t.me/Im_Server " title="Напишите нам в Telegram">
             <img class="ico" src="img/icons/social_media/ico-tg.svg" alt="Иконка месседжера телеграм"/>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=+79080888002&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%21%20%D1%83%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%21" title="Напишите нам в Whatsapp">
+          <a
+            href="https://api.whatsapp.com/send?phone=+79080888002&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%21%20%D1%83%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%21"
+            title="Напишите нам в Whatsapp">
+            <img class="ico" src="img/icons/social_media/ico-wa.svg" alt="Иконка месседжера ватсап"/>
+          </a>
+          <a href="viber://add?number=79080888002" title="Напишите нам в Viber">
+            <img class="ico" src="img/icons/social_media/ico-viber.svg" alt="Иконка месседжера вайбер"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__mobile-menu">
+      <nav class="header__menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu__item menu__item--sub-mobile">
+            <a>Услуги</a>
+            <span class="menu-arrow"></span>
+            <ul class="submenu__list">
+              <li class="submenu__item">
+                <a href="rent.html">Аренда сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="colocation.html">Размещение сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="leasing.html">Лизинг сервера</a>
+              </li>
+              <li class="submenu__item">
+                <a href="administration.html">Администрирование и сервис</a>
+              </li>
+              <li class="submenu__item">
+                <a href="repair.html">Ремонт оборудования</a>
+              </li>
+              <li class="submenu__item">
+                <a href="supply.html">Поставка серверного оборудования</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="about.html">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <div class="contacts__phone">
+          <a href="tel:88005054534">8 (800) 505-45-34</a>
+        </div>
+        <div class="contacts__social">
+          <a href="https://t.me/Im_Server " title="Напишите нам в Telegram">
+            <img class="ico" src="img/icons/social_media/ico-tg.svg" alt="Иконка месседжера телеграм"/>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+79080888002&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%21%20%D1%83%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%21"
+            title="Напишите нам в Whatsapp">
             <img class="ico" src="img/icons/social_media/ico-wa.svg" alt="Иконка месседжера ватсап"/>
           </a>
           <a href="viber://add?number=79080888002" title="Напишите нам в Viber">
@@ -113,10 +169,11 @@
     </div>
   </div>
 </header>
-      <main>
+      <main class="service-page">
         <div class="container">
           
-          <div class="service-hero">
+
+  <div class="service-hero">
   <div class="hero__body">
     <h2 class="hero__title">Аренда сервера</h2>
     <p class="hero__subtitle subtitle">Выберите конфигурацию сервера для решения ваших задач</p>
@@ -128,7 +185,8 @@
     <img src="img/image/rent_img.svg" alt="Изображение услуги">
   </div>
 </div>
-          <div class="options">
+
+  <div class="options">
   <div class="options__text">
     <h2 class="options__title">Опции с каждым тарифом:</h2>
     <div class="options__subtitle subtitle">
@@ -148,12 +206,14 @@
   </ul>
 </div>
 
-          <div class="change-info">
-            <h3>Оперативное изменение конфигурации сервера</h3>
-            <p>При необходимости вы сможете изменить конфигурацию заказанного оборудования обратившись в поддержку. Изменения
-              предоставляются в режиме реального времени а оформление и оплата производится позже..</p>
-          </div>
-          <div class="additional-services">
+  <div class="change-info">
+    <h3>Оперативное изменение конфигурации сервера</h3>
+    <p>При необходимости вы сможете изменить конфигурацию заказанного оборудования обратившись в поддержку. Изменения
+      предоставляются в режиме реального времени а оформление и оплата производится позже..
+    </p>
+  </div>
+
+  <div class="additional-services">
   <div class="additional-services__text">
     <h2 class="additional-services__title">Дополнительные услуги</h2>
     <div class="additional-services__subtitle subtitle">
@@ -207,7 +267,8 @@
       
   </ul>
 </div>
-          
+
+  
 
 <section class="tariffs">
   <h2 class="tariffs__title">Наши тарифы</h2>
@@ -228,7 +289,7 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>4800₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-1.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
         
@@ -249,7 +310,7 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>6500₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-2.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
         
@@ -270,7 +331,7 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>8000₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-3.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
         
@@ -291,13 +352,13 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>9500₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-4.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
         
     <div class="tariff-card">
       <div class="tariff-card__parameters">
-        <div class="tariff-card__name">Сервер 2xE5-2600v2</div>
+        <div class="tariff-card__name">Intel Xeon 2xE5-2600v2</div>
         <ul class="parameters-list">
           
           <li>16 ядер</li>
@@ -312,13 +373,13 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>15000₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-5.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
         
     <div class="tariff-card">
       <div class="tariff-card__parameters">
-        <div class="tariff-card__name">Сервер 2xE5-2600v2</div>
+        <div class="tariff-card__name">Intel Xeon 2xE5-2600v2</div>
         <ul class="parameters-list">
           
           <li>20 ядер</li>
@@ -333,7 +394,7 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>18000₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-6.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
         
@@ -354,7 +415,7 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>25000₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-7.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
         
@@ -375,7 +436,7 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>29000₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-8.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
         
@@ -396,16 +457,16 @@
       </div>
       <div class="tariff-card__summary">
         <div class="tariff-card__price">от <span>40000₽</span> / месяц </div>
-        <a href="/oformlenie" class="tariff-card__button main-button">Заказать</a>
+        <a href="rent-config-9.html" class="tariff-card__button main-button">Заказать</a>
       </div>
     </div>
     
   </div>
 </section>
 
+  
 
-          
-          <section class="stepper">
+  <section class="stepper">
   <div class="stepper__container">
     <div class="stepper__left">
       <h2 class="stepper__title">Как арендовать сервер в Первом Дата Центре</h2>
@@ -442,6 +503,8 @@
     </div>
   </div>
 </section>
+
+
         </div>
       </main>
       <footer class="page__footer footer">
