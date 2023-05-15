@@ -215,8 +215,10 @@
     </div>
   </div>
 </section>
-          <form action="" enctype="text/plain" class="form main-form">
+          
+<form action="" class="form main-form" name="main">
   <div class="main-form__content form__content">
+
     <div class="main-form__header">
       <h3 class="main-form__title">Свяжитесь с нами</h3>
       <div class="main-form__subtitle">
@@ -225,53 +227,87 @@
         <p>Уточнить конфигурацию?</p>
       </div>
     </div>
-    <div class="main-form__field form-field">
-      <label for="name-input" class="main-form__label form-label">
-        Ваше имя <input type="text" id="name-input" class="main-form__input form-input _req"/>
-      </label>
-    </div>
-    <div class="main-form__field form-field">
-      <label for="tel-input" class="main-form__label form-label">
-        Ваш номер телефона <input type="tel" id="tel-input" class="main-form__input form-input _req"/>
-      </label>
-    </div>
-    <div class="main-form__field form-field">
-      <label for="form-message" class="main-form__label form-label">
-        Какая услуга Вас интересует?
-      </label>
-      <div class="main-form__service-select">
-        <div class="check-box-container">
-          <label class="main-form__check form-check">
-            <input class="form-check__input" type="checkbox"/>
-            <span class="form-check__box"></span>Аренда</label>
-        </div>
-        <div class="check-box-container">
-          <label class="main-form__check form-check">
-            <input class="form-check__input" type="checkbox"/>
-            <span class="form-check__box"></span>Размещение</label>
-        </div>
-        <div class="check-box-container">
-          <label class="main-form__check form-check">
-            <input class="form-check__input" type="checkbox"/>
-            <span class="form-check__box"></span>Другое</label>
-        </div>
-      </div>
 
-    </div>
-    <div class="main-form__field form-field">
-      <label for="form-message" class="main-form__label form-label">
-        Напишите вопрос, описание проекта
-        <textarea class="main-form__input form-input _req" id="form-message" value='fff'></textarea>
-      </label>
-    </div>
+    
+  <div class="form-field">
+    <label class="main-form__label form-label">
+      Ваше имя
+      
+        <span>*</span>
+      
+      <input type="text" class="main-form__input form-input" name="name" required="true" />
+    </label>
+  </div>
 
-    <div class="main-form__agreement form-agreement">
-      <span class="form-agreement__text">
-        Отправляя заявку, вы соглашаетесь с
-        <a href="privacy.html">Политикой конфиденциальности</a>
-      </span>
+
+    
+  <div class="form-field">
+    <label class="main-form__label form-label">
+      Ваш номер телефона
+      
+        <span>*</span>
+      
+      <input type="tel" class="main-form__input form-input" name="phone" required="true" data-tel-input/>
+    </label>
+  </div>
+
+    
+    
+
+    
+  <div class="form-field">
+    <label class="main-form__label form-label">
+      Какая услуга вас интересует?
+    </label>
+    <div class="main-form__service-select">
+      
+        <div class="check-box-container">
+          <label class="main-form__check form-check">
+            <input class="form-check__input" type="checkbox" name="rent"/>
+            <span class="form-check__box"></span>
+            Аренда
+          </label>
+        </div>
+      
+        <div class="check-box-container">
+          <label class="main-form__check form-check">
+            <input class="form-check__input" type="checkbox" name="colocation"/>
+            <span class="form-check__box"></span>
+            Размещение
+          </label>
+        </div>
+      
+        <div class="check-box-container">
+          <label class="main-form__check form-check">
+            <input class="form-check__input" type="checkbox" name="other"/>
+            <span class="form-check__box"></span>
+            Другое
+          </label>
+        </div>
+      
     </div>
-    <button class="main-form__submit form-button">Отправить заявку</button>
+  </div>
+
+
+    
+  <div class="form-field">
+    <label for="form-message" class="main-form__label form-label">
+      Напишите вопрос, описание проекта
+      
+      <textarea class="main-form__input form-input _req" name="message" maxlength="255" required="false"></textarea>
+    </label>
+  </div>
+
+
+    
+  <div class="main-form__agreement form-agreement">
+    <span class="form-agreement__text">
+      Отправляя заявку, вы соглашаетесь с
+      <a href="privacy.html">Политикой конфиденциальности</a>
+    </span>
+  </div>
+
+    <button class="main-form__submit form-button" id="button-submit">Отправить заявку</button>
   </div>
 </form>
         </div>

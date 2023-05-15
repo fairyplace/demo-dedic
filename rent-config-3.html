@@ -194,42 +194,78 @@
               </ul>
               <h4 class='config__price'>от <strong>8000₽</strong> / месяц</h4>
             </div>
-            <form class="form order-form">
-  <div class="order-form__content form__content">
-    <div class="order-form__field form-field">
-      <label for="name-input" class="order-form__label form-label">
-        Ваше имя <input type="text" id="name-input" class="order-form__input form-input _req"/>
-      </label>
-    </div>
-    <div class="order-form__field form-field">
-      <label for="tel-input" class="order-form__label form-label">
-        Ваш номер телефона <input type="tel" id="tel-input" class="order-form__input form-input _req"/>
-      </label>
-    </div>
-    <div class="order-form__field form-field">
-      <label for="email-input" class="order-form__label form-label">
-        Ваш email <input type="email" id="email-input" class="order-form__input form-input _req"/>
-      </label>
-    </div>
-    <div class="order-form__field form-field">
-      <label for="company-input" class="order-form__label form-label">
-        Ваша компания <input type="text" id="company-input" class="order-form__input form-input _req"/>
-      </label>
-    </div>
-    <div class="order-form__field form-field">
-      <label for="form-message" class="order-form__label form-label">
-        Комментарий (если есть)
-        <textarea class="order-form__input form-input _req" id="form-message" value='fff'></textarea>
-      </label>
-    </div>
+            
 
-    <div class="order-form__agreement form-agreement">
-      <span class="form-agreement__text">
-        Отправляя заявку, вы соглашаетесь с
-        <a href="privacy.html">Политикой конфиденциальности</a>
-      </span>
-    </div>
-    <button class="order-form__submit form-button">Отправить заявку</button>
+<form class="form order-form" name="main">
+  <div class="order-form__content form__content">
+    
+    
+  <div class="form-field">
+    <label class="main-form__label form-label">
+      Ваше имя
+      
+        <span>*</span>
+      
+      <input type="text" class="main-form__input form-input" name="name" required="true" />
+    </label>
+  </div>
+
+
+    
+  <div class="form-field">
+    <label class="main-form__label form-label">
+      Ваш номер телефона
+      
+        <span>*</span>
+      
+      <input type="tel" class="main-form__input form-input" name="phone" required="true" data-tel-input/>
+    </label>
+  </div>
+
+
+    
+  <div class="form-field">
+    <label class="main-form__label form-label">
+      Ваш e-mail
+      
+        <span>*</span>
+      
+      <input type="email" class="main-form__input form-input" name="email" required="true" />
+    </label>
+  </div>
+
+
+    
+  <div class="form-field">
+    <label class="main-form__label form-label">
+      Ваша компания
+      
+        <span>*</span>
+      
+      <input type="text" class="main-form__input form-input" name="company" required="true" />
+    </label>
+  </div>
+
+
+    
+  <div class="form-field">
+    <label for="form-message" class="main-form__label form-label">
+      Комментарий (если есть)
+      
+      <textarea class="main-form__input form-input _req" name="message" maxlength="255" required="false"></textarea>
+    </label>
+  </div>
+
+
+    
+  <div class="main-form__agreement form-agreement">
+    <span class="form-agreement__text">
+      Отправляя заявку, вы соглашаетесь с
+      <a href="privacy.html">Политикой конфиденциальности</a>
+    </span>
+  </div>
+
+    <button class="order-form__submit form-button" id="button-submit">Отправить заявку</button>
   </div>
 </form>
           </div>
