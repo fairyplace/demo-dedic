@@ -42,6 +42,19 @@
 </head>
 
   <body>
+    <script>
+      const configData = {
+        title: 'Аренда сервера 2xE5-2600v4',
+        
+          CPU: 'Intel Xeon 2xE5-2600v4, 20 ядер',
+        
+          RAM: '256GB RAM, DDR3',
+        
+          Диски: '2xSSD 512GB, HDD 8TB',
+        
+        price: '25000'
+      }
+    </script>
     <div class="wrapper">
       <header class="header">
   <div class="header__container container">
@@ -196,9 +209,9 @@
             </div>
             
 
-<form class="form order-form" name="main">
+<form class="form order-form" name="order">
   <div class="order-form__content form__content">
-    
+
     
   <div class="form-field">
     <label class="main-form__label form-label">
@@ -206,7 +219,7 @@
       
         <span>*</span>
       
-      <input type="text" class="main-form__input form-input" name="name" required="true" />
+      <input  type="text" class="main-form__input form-input" name="name" true maxLength=32 />
     </label>
   </div>
 
@@ -218,7 +231,7 @@
       
         <span>*</span>
       
-      <input type="tel" class="main-form__input form-input" name="phone" required="true" data-tel-input/>
+      <input  type="tel" class="main-form__input form-input" name="phone" required data-tel-input />
     </label>
   </div>
 
@@ -230,7 +243,7 @@
       
         <span>*</span>
       
-      <input type="email" class="main-form__input form-input" name="email" required="true" />
+      <input  type="email" class="main-form__input form-input" name="email" required maxLength=50 />
     </label>
   </div>
 
@@ -240,9 +253,7 @@
     <label class="main-form__label form-label">
       Ваша компания
       
-        <span>*</span>
-      
-      <input type="text" class="main-form__input form-input" name="company" required="true" />
+      <input  type="text" class="main-form__input form-input" name="company"  maxLength=32 />
     </label>
   </div>
 
@@ -252,7 +263,7 @@
     <label for="form-message" class="main-form__label form-label">
       Комментарий (если есть)
       
-      <textarea class="main-form__input form-input _req" name="message" maxlength="255" required="false"></textarea>
+      <textarea id="form-message" class="main-form__input form-input _req" name="message" maxlength="255" ></textarea>
     </label>
   </div>
 
@@ -265,9 +276,38 @@
     </span>
   </div>
 
-    <button class="order-form__submit form-button" id="button-submit">Отправить заявку</button>
+    
+    <button class="main-form__submit form-button disabled">Отправить заявку</button>
+
   </div>
 </form>
+
+  <div class="form-modal modal" id="success">
+    <div class="form-modal__body modal-body">
+      <h3 class="form-modal__title">
+        Спасибо!
+      </h3>
+      <div class="form-modal__message">
+        Ваше обращение успешно отправлено. Наш специалист свяжется с Вами в течение 15 минут.
+      </div>
+      <a class="form-modal__button main-button modal__close-btn">Ок</a>
+    </div>
+  </div>
+
+
+  <div class="form-modal modal" id="error">
+    <div class="form-modal__body modal-body">
+      <h3 class="form-modal__title">
+        Что-то пошло не так...
+      </h3>
+      <div class="form-modal__message">
+        Ваше обращение не было отправлено по техническим причинам, пожалуйста, попробуйте ещё раз
+      </div>
+      <a class="form-modal__button main-button modal__close-btn">Ок</a>
+    </div>
+  </div>
+
+
           </div>
         </div>
       </main>

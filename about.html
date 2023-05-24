@@ -465,7 +465,7 @@
   </section>
         <div class="container">
           
-<form action="" class="form main-form" name="main">
+<form method="POST" class="form main-form" name="main">
   <div class="main-form__content form__content">
 
     <div class="main-form__header">
@@ -484,7 +484,7 @@
       
         <span>*</span>
       
-      <input type="text" class="main-form__input form-input" name="name" required="true" />
+      <input  type="text" class="main-form__input form-input" name="name" required maxLength=32 />
     </label>
   </div>
 
@@ -496,11 +496,11 @@
       
         <span>*</span>
       
-      <input type="tel" class="main-form__input form-input" name="phone" required="true" data-tel-input/>
+      <input  type="tel" class="main-form__input form-input" name="phone" required data-tel-input />
     </label>
   </div>
 
-    
+  
     
 
     
@@ -543,7 +543,7 @@
     <label for="form-message" class="main-form__label form-label">
       Напишите вопрос, описание проекта
       
-      <textarea class="main-form__input form-input _req" name="message" maxlength="255" required="false"></textarea>
+      <textarea id="form-message" class="main-form__input form-input _req" name="message" maxlength="255" ></textarea>
     </label>
   </div>
 
@@ -556,9 +556,38 @@
     </span>
   </div>
 
-    <button class="main-form__submit form-button" id="button-submit">Отправить заявку</button>
+    
+    <button class="main-form__submit form-button disabled">Отправить заявку</button>
+
   </div>
 </form>
+
+  <div class="form-modal modal" id="success">
+    <div class="form-modal__body modal-body">
+      <h3 class="form-modal__title">
+        Спасибо!
+      </h3>
+      <div class="form-modal__message">
+        Ваше обращение успешно отправлено. Наш специалист свяжется с Вами в течение 15 минут.
+      </div>
+      <a class="form-modal__button main-button modal__close-btn">Ок</a>
+    </div>
+  </div>
+
+
+  <div class="form-modal modal" id="error">
+    <div class="form-modal__body modal-body">
+      <h3 class="form-modal__title">
+        Что-то пошло не так...
+      </h3>
+      <div class="form-modal__message">
+        Ваше обращение не было отправлено по техническим причинам, пожалуйста, попробуйте ещё раз
+      </div>
+      <a class="form-modal__button main-button modal__close-btn">Ок</a>
+    </div>
+  </div>
+
+
           <section class="page__contacts contacts">
   <h2 class="contacts__title">Наши контакты</h2>
 
